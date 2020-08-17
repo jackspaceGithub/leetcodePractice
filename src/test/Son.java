@@ -3,7 +3,7 @@ package test;
 public class Son extends Parent {
 
   public Son() {
-
+    super();
   }
 
 //  public int hashCode(){

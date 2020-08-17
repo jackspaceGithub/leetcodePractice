@@ -1,5 +1,6 @@
 package testConcurrent;
 
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class ReentrantLockTest {
@@ -16,6 +17,7 @@ public class ReentrantLockTest {
           try{
             Thread.sleep(1);
             reentrantLock.lock();
+            reentrantLock.tryLock(2L, TimeUnit.SECONDS);
             x++;
           } catch (Exception e) {
             e.printStackTrace();

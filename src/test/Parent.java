@@ -13,6 +13,7 @@ public class Parent implements AutoCloseable {
 
   }
 
+
   public FileInputStream getFileInputStream() {
     return fileInputStream;
   }

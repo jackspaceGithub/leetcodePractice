@@ -11,17 +11,25 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.*;
 import java.util.concurrent.*;
+import java.util.stream.Collectors;
 
 public class Main {
 
   public static void main(String[] args) throws Exception {
 
+//    System.out.println("" + -3);
+//    String str = "";
+//    StringBuilder stringBuilder = new StringBuilder();
+//    stringBuilder.reverse();
+//    char[] x = new char[10];
+//    String s = String.valueOf(x);
+//
 //    List<Integer> list = new ArrayList<>();
 //    list.add(1);
 //    list.add(2);
 //
 //    List<Integer> list2 = list.stream().filter(e -> e.equals(1)).collect(Collectors.toList());
-
+//    System.out.println(list2);
     // break跳出多级循环问题
 //    ok:
 //    while(true) {
@@ -57,7 +65,7 @@ public class Main {
 //    MemberInner.Member member = memberInner.new Member();
 
 
-//    // 反射
+    // 反射
 //    Class<?> oneClass = Class.forName("test.Parent");
 //    Parent object = oneClass.newInstance();
 //    Method[] methods = oneClass.getMethods();
