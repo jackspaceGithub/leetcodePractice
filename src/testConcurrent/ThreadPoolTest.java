@@ -29,5 +29,8 @@ public class ThreadPoolTest {
 
       }
     });
+
+    threadPoolExecutor.shutdown();
+    threadPoolExecutor.shutdownNow();
   }
 }

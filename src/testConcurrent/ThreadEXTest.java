@@ -14,6 +14,8 @@ public class ThreadEXTest {
 
     thread1.start();
     System.out.println("主线程运行");
+    thread1.interrupt();
+    thread1.isInterrupted();
 //    thread1.getUncaughtExceptionHandler().uncaughtException(thread1, );
   }
 }
